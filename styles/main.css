@@ -1,0 +1,484 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+h1, h2, h3, a {
+    font-family: 'Quattrocento', serif;
+    font-weight: 800;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .09rem;
+    line-height: 1.75rem;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    width: 100%;
+    height: 65px;
+    background-color: #262626;
+}
+
+.navcont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 1.65rem;
+    text-decoration: none;
+    color: #F2F2F2;
+    margin: 0px 10px;
+}
+
+.nav-socials {
+    overflow: hidden;
+}
+
+.nav-socials a {
+    font-size: 1.65rem;
+    text-decoration: none;
+    color: black;
+}
+
+.navother {
+    background-color: inherit;
+    padding: 18px 0px 17px 0px;
+}
+
+.navother, .projother, .projects {
+    transition: background-color 500ms ease;
+}
+
+.projdrop{
+    text-align: center;
+    width: 13%;
+    min-width: 132px;
+    display: inline-block;
+    padding: 19px 0px;
+}
+
+.projects {
+    padding: 19px 0px;
+}
+
+.projects img {
+    margin-left: 3px;
+}
+
+.projectlist{
+    display: none;
+    width: 12%;
+    min-width: 161px;
+    position: absolute;
+    top: 65px;
+    z-index: 2;
+    text-align: center;
+}
+
+.projectlist a {
+    display: inline-block;
+}
+
+.projother {
+    width: 100%;
+    padding: 15px 0px;
+}
+
+#dropimg {
+    width: 10%;
+}
+
+#dropimg2 {
+    margin: auto;
+    width: 50%;
+}
+
+.nav-socials {
+    width: 5%; 
+    min-width: 76px;
+}
+
+.socials {
+    display: flex;
+}
+
+.socialdrop {
+    padding: 14px 0px;
+    transition: all 500ms ease;
+}
+
+.social-list {
+    width: 5%;
+    min-width: 78px;
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    z-index: 2;
+}
+
+.social-list img{
+    position: relative;
+    width: 100%;
+    max-width: 65px;
+    min-width: 65px;
+    padding: 2px 0px;
+    z-index: 2;
+}
+
+.social-group {
+    min-height: 50px;
+    max-height: 100px;
+}
+
+.social-group a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#label-1, #label-2, #label-3, #label-4 {
+    visibility: hidden;
+    position: absolute;
+    left: 80px;
+    margin: 12px 10px;
+    background-color: inherit;
+    color: #F2F2F2;
+}
+
+.projects:hover, .navother:hover, .projother:hover, .socialdrop:hover  {
+    background-color: #595959;
+}
+
+.projects:hover a, .navother:hover a, .projother:hover a{
+    border-bottom: 2px solid black;
+}
+
+.projdrop:hover .projectlist, .socialdrop:hover .social-list {
+    display: block;
+    background-color: #262626;
+}
+
+/* Main Section */
+/* Scrolling Banner Section */
+.scrollcont {
+    width: 100%;
+    height: auto;
+    margin: 100px auto 0px auto;
+}
+
+.scrollbanner {
+    width: 100%;
+    height: auto;
+}
+
+.scrollimg {
+    width: 100%;
+    height: 600px;
+    animation: scrolling 25s ease 0s infinite;
+}
+
+.scrolloverlay {
+    display: block;
+    opacity: 0;
+    width: 100%;
+    height: 600px;
+    z-index: 1;
+    background-image: linear-gradient(rgba(300,300,300,.45) 15%, rgba(0,0,0,.45) 100%);
+    transition: all 400ms ease;
+}
+
+.pandown {
+    position: relative;
+    left: 50%;
+    top: 100%;
+    width: 5%;
+    height: auto;
+}
+
+.scrollbanner:hover .scrolloverlay{
+    opacity: 1;
+}
+
+@keyframes scrolling {
+    0% {
+        background-image: url(../images/scrollkeyboard.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+    25% {
+        background-image: url(../images/scrollcamping.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    50% {
+        background-image: url(../images/scrolllaptop.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    75% {
+        background-image: url(../images/scrollhiking.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    100% {
+        background-image: url(../images/scrollkeyboard.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+/* Hero Section */
+.herocont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 200px auto;
+    width: 100%;
+    height: auto;
+}
+
+.heroimgcont {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.heroimgcont figure {
+    width: 50%;
+    min-width: 300px;
+    height: auto;
+}
+
+.heroimgcont figure img {
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 10px gray;
+}
+
+.snapshot {
+    padding: 0px 20px;
+    flex-direction: column;
+    width: 65%;
+    min-width: 470px;
+    border-left: 3px solid black;
+}
+
+.snapshot h1 {
+    width: 31%;
+    min-width: 144px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid black;
+}
+
+.snapshot p {
+    width: 80%;
+    min-width: 450px;
+}
+
+/* Banner Sections */
+.bannercont {
+    margin: 0px auto;
+}
+
+.bannercont h2 {
+    width: 25%;
+    min-width: 225px;
+    margin: 100px auto;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1rem;
+}
+
+.bannercont h2 span {
+    background-color: #F2F2F2;
+    padding: 0px 10px;
+}
+
+.imgcont {
+    position: relative;
+    margin: 0px auto;
+    width: 75%;
+    box-shadow: 2px 2px 10px gray;
+    height: 350px;
+    transition: all 200ms ease;
+}
+
+#aboutlink {background-image: url(../images/aboutme.jpg);}
+#projlink {background-image: url(../images/projects.jpg);}
+#contactlink {background-image: url(../images/contact.jpg);}
+#resumelink {background-image: url(../images/resume.jpg);}
+
+#aboutlink, #projlink, #contactlink, #resumelink {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imgcont img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlaycont {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.5);
+    width: 75%;
+    transition: all 200ms ease;
+    opacity: 0;
+    font-size: 3.125rem;
+    padding: 5%;
+    margin: auto;
+    text-align: center;
+}
+
+.imgcont a{
+    color: white;
+    text-decoration: none;
+}
+
+.imgcont:hover {
+    transform: scale(1.1);
+}
+
+.imgcont:hover .overlay{
+    transform: scale(1.01);
+    opacity: 1;
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    height: 45px;
+    margin-top: 100px;
+    background-color: #262626;
+}
+
+/* Media Query Section */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .herocont {
+        flex-direction: column;
+        margin: 100px auto;
+    }
+    
+    .snapshot {
+        width: 40%;
+        border-left: none;
+        border-top: 3px solid black;
+        padding: 20px;
+        margin: 50px auto 0px auto;
+    }
+    
+    .overlaycont {
+        height: 200px;
+    }
+    
+    .overlay {
+        font-size: 1.5rem;
+    }
+    
+    .imgcont {
+        height: 200px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .herocont {
+        flex-direction: column;
+        margin: 150px auto;
+    }
+    
+    .snapshot {
+        width: 40%;
+        border-left: none;
+        border-top: 3px solid black;
+        padding: 20px;
+        margin: 50px auto 0px auto;
+    }
+    
+    .overlaycont {
+        height: 200px;
+    }
+    
+    .overlay {
+        font-size: 2rem;
+    }
+    
+    .imgcont {
+        height: 200px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .herocont {
+        flex-direction: column;
+    }
+    
+    .snapshot {
+        width: 40%;
+        border-left: none;
+        border-top: 3px solid black;
+        padding: 20px;
+        margin: 50px auto 0px auto;
+    }
+    
+    .overlaycont {
+        height: 300px;
+    }
+    
+    .overlay {
+        font-size: 2.5rem;
+    }
+    
+    .imgcont {
+        height: 300px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .overlay {
+        font-size: 3rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

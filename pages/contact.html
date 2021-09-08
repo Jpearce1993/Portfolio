@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <!-- Browser Title -->
+        <title>Jonah Pearce | Contact</title>
+        
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+        
+        <!-- Title Icon -->
+        
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="../styles/contact.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <section class="navcont">
+                <nav class="navbar">
+                    <div class="navother">
+                        <a href="../index.html">Home</a>
+                    </div>
+                    <div class="projdrop">
+                        <div class="projects">
+                            <a href="../pages/projects.html">Projects<img src="../images/arrow.png" id="dropimg" alt=""></a>
+                        </div>
+                        <div class="projectlist">
+                            <div class="projother">
+                                <a href="../pages/projects.html#current">Current</a>
+                            </div>
+                            <div class="projother">
+                                <a href="../pages/projects.html#completed">Completed</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navother">
+                        <a href="../pages/about.html">About</a>
+                    </div>
+                    <div class="navother">
+                        <a href="../pages/resume.html">Resume</a>
+                    </div>
+                    <div class="navother">
+                        <a href="../pages/contact.html">Contact</a>
+                    </div>
+                </nav>
+                <nav class="nav-socials">
+                    <div class="socialdrop" id="drop">
+                        <div class="socials">
+                            <img src="../images/dropdown.png" alt="" id="dropimg2">
+                        </div>
+                        <div class="social-list" id="social-list">
+                            <div class="social-group" id="group-1">
+                                <a href="https://www.facebook.com/jonah.pearce.1" target="_blank" rel="noopener noreferrer"><span id="label-1">Facebook</span><img src="../images/facebook.png" alt="" id="images-1"></a>
+                            </div>
+                            <div class="social-group" id="group-2">
+                                <a href="https://twitter.com/whalefood76" target="_blank" rel="noopener noreferrer"><span id="label-2">Twitter</span><img src="../images/twitter.png" alt="" id="images-2"></a>
+                            </div>
+                            <div class="social-group" id="group-3">
+                                <a href="https://github.com/Jpearce1993" target="_blank" rel="noopener noreferrer"><img src="../images/GitHub.png" alt="" id="images-3"><span id="label-3">Github</span></a></div>
+                            <div class="social-group" id="group-4">
+                                <a href="https://www.linkedin.com/in/jonahpearce/"target="_blank" rel="noopener noreferrer"><span id="label-4">LinkedIn</span><img src="../images/linkedin.png" alt="" id="images-4"></a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <section class="welcomecont">
+                <div class="titlecont">
+                    <h1><span>Contact</span></h1>
+                </div>
+                <div class="messagecont">
+                    <h2>I'd love to hear from you</h2>
+                    <p>From a friendly hello to constructive criticism, hearing from you can help me improve to be a better developer and person!</p>
+                </div>
+            </section>
+            <section class="contentcont">
+                <div class="formcont">
+                    <div class="form-group">
+                        <form action="https://formspree.io/f/meqvovoo" method="POST" name="EmailForm" id="my-form">
+                            <div class="namecont">
+                                <input type="text" id="fname" name="fname" placeholder="First" maxlength="25" class="name" required>
+                                <input type="text" id="lname" name="lname" placeholder="Last" maxlength="40" class="name" required>
+                            </div>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" maxlength="120" required>
+                            <input type="email" id="return" name="return" placeholder="E-mail" required>
+                            <textarea id="message" name="message" placeholder="Message....." maxlength="400" rows="10" cols="30" required></textarea>
+                            <input type="submit" value="Send" id="submit">
+                            <div id="lock-modal"></div>
+                            <div id="loading-circle"></div>
+                        </form>
+                        <div id="status"></div>
+                    </div>
+                    <div class="extrascont">
+                        <div class="imgcont">
+                            <img src="../images/JonahPearce.png" alt="">
+                        </div>
+                        <div class="socialscont">
+                            <div class="logocont">
+                                <a href="https://www.linkedin.com/in/jonahpearce/"><img src="../images/linkedin.png" alt="Linked In Link"></a>
+                            </div>
+                            <div class="logocont">
+                                <a href="https://twitter.com/whalefood76">
+                                <img src="../images/twitter.png" alt="Twitter Link"></a>
+                            </div>
+                            <div class="logocont">
+                                <a href="https://www.facebook.com/jonah.pearce.1">
+                                <img src="../images/facebook.png" alt="Facebook Link"></a>
+                            </div>
+                            <div class="logocont">
+                                <a href="https://github.com/Jpearce1993">
+                                <img src="../images/GitHub.png" alt="Facebook Link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </section>
+            <script src="../js/main.js"></script>
+            <script src="../js/socialBar.js"></script>
+        </main>
+        <footer></footer>
+    </body>
+</html>

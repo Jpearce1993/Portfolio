@@ -1,0 +1,632 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+h1, h2, h3, a {
+    font-family: 'Quattrocento', serif;
+    font-weight: 800;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: .09rem;
+    line-height: 1.75rem;
+}
+
+span {
+    background: #F2F2F2;
+    padding: 0px 10px;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    width: 100%;
+    height: 65px;
+    background-color: #262626;
+}
+
+.navcont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 1.65rem;
+    text-decoration: none;
+    color: #F2F2F2;
+    margin: 0px 10px;
+}
+
+.nav-socials {
+    overflow: hidden;
+}
+
+.nav-socials a {
+    font-size: 1.65rem;
+    text-decoration: none;
+    color: black;
+}
+
+.navother {
+    background-color: inherit;
+    padding: 18px 0px 17px 0px;
+}
+
+.navother, .projother, .projects {
+    transition: background-color 500ms ease;
+}
+
+.projdrop{
+    text-align: center;
+    width: 13%;
+    min-width: 132px;
+    display: inline-block;
+    padding: 19px 0px;
+}
+
+.projects {
+    padding: 19px 0px;
+}
+
+.projects img {
+    margin-left: 3px;
+}
+
+.projectlist{
+    display: none;
+    width: 12%;
+    min-width: 161px;
+    position: absolute;
+    top: 65px;
+    z-index: 2;
+    text-align: center;
+}
+
+.projectlist a {
+    display: inline-block;
+}
+
+.projother {
+    width: 100%;
+    padding: 15px 0px;
+}
+
+#dropimg {
+    width: 10%;
+}
+
+#dropimg2 {
+    margin: auto;
+    width: 50%;
+}
+
+.nav-socials {
+    width: 5%; 
+    min-width: 76px;
+}
+
+.socials {
+    display: flex;
+}
+
+.socialdrop {
+    padding: 14px 0px;
+    transition: all 500ms ease;
+} 
+
+.social-list {
+    width: 5%;
+    min-width: 78px;
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    z-index: 2;
+}
+
+.social-list img{
+    position: relative;
+    width: 100%;
+    max-width: 65px;
+    min-width: 65px;
+    padding: 2px 0px;
+    z-index: 2;
+}
+
+.social-group {
+    min-height: 50px;
+    max-height: 100px;
+}
+
+.social-group a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#label-1, #label-2, #label-3, #label-4 {
+    visibility: hidden;
+    position: absolute;
+    left: 80px;
+    margin: 12px 10px;
+    background-color: inherit;
+    color: #F2F2F2;
+}
+
+.projects:hover, .navother:hover, .projother:hover, .socialdrop:hover  {
+    background-color: #595959;
+}
+
+.projects:hover a, .navother:hover a, .projother:hover a{
+    border-bottom: 2px solid black;
+}
+
+.projdrop:hover .projectlist, .socialdrop:hover .social-list {
+    display: block;
+    background-color: #262626;
+}
+
+/* Main Section */
+/* Title Section */
+.herocont {
+    width: 100%;
+    margin: 100px auto 100px auto;
+}
+
+.herocont h1 {
+    font-size: 2.25rem;
+    margin: 0px auto;
+    width: 25%;
+    min-width: 250px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1rem;
+}
+
+/* Content Section */
+.contentcont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    margin: 200px auto;
+}
+
+.generalcont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 75%;
+}
+
+.imgcont {
+    width: 25%;
+    min-width: 260px;
+}
+
+.imgcont img {
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 10px gray;
+}
+
+/* .storycont {
+} */
+
+.storytitle {
+    width: 50%;
+    min-width: 200px;
+    text-align: left;
+}
+
+.storytitle h2 {    
+    font-size: 1.5rem;
+    margin-bottom: 35px;
+    padding-bottom: 2.5px;
+    border-bottom: 1px solid black;
+}
+
+.storycontent {
+    width: 100%;
+    min-width: 200px;
+}
+
+.left {
+    width: 60%;
+    padding-left: 20px;
+    margin-right: 50px;
+}
+
+.right {
+    width: 60%;
+    padding-right: 20px;
+    margin-left: 50px;
+}
+
+.brdleft {
+    border-left: 3px solid black;
+}
+
+.brdright {
+    border-right: 3px solid black;
+}
+
+.animalcont, .backpackingCont, .dndCont {
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+    justify-content: space-around;
+    justify-items: center;
+    width: 85%;
+    margin: auto;
+    height: 500px;
+    background-color:hsla(0, 0%, 35%, 0.75);
+    box-shadow: 2px 2px 10px gray;
+}
+
+.rat, .bostons, .max, .backpackingSmall1, 
+.backpackingSmall2, .backpackingLarge, 
+.dndSmall1, .dndSmall2, .dndLarge {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 10px black;
+}
+
+.ratcont, .maxcont, .backpackingSmallCont, .dndSmallCont {
+    width: 23%;
+    height: 300px;    
+}
+
+.bostonscont, .backpackingLargeCont, .dndLargeCont {
+    width: 45%;
+    height: 450px;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.rat {
+    background-image: url('../images/rats.jpg');
+}
+
+.bostons {
+    background-image: url('../images/bostons.jpg');
+}
+
+.max {
+    background-image: url('../images/max.jpg');
+}
+
+.backpackingSmall1 {
+    background-image: url('../images/tablelands_backpacking2.jpg');
+}
+
+.backpackingSmall2 {
+    background-image: url('../images/tablelands_backpacking.jpg');
+}
+
+.backpackingLarge {
+    background-image: url('../images/tablelands_backpacking3.jpg');
+}
+
+.dndSmall1 {
+    background-image: url('../images/dungeonmastersguide.jpg');
+}
+
+.dndSmall2 {
+    background-image: url('../images/monstermanual.jpg');
+}
+
+.dndLarge {
+    background-image: url('../images/playershandbook.jpg');
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    height: 45px;
+    margin-top: 100px;
+    background-color: #262626;
+}
+
+/* Media Query Section */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+    .contentcont {
+        margin: 50px 0px;
+    }
+    
+    .generalcont {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .left {
+        width: 60%;
+        padding: 20px 0px;
+        margin: 50px 0px;
+    }
+    
+    .brdleft {
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-left: none;
+    }
+
+    .right {
+        width: 60%;
+        padding: 20px 0px;
+        margin: 50px 0px;
+    }
+    
+    .brdright {
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-right: none;
+    }
+    
+    .imgright {
+        order: -1;
+    }
+    
+    .animalcont, .backpackingCont, .dndCont {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        min-width: 600px;
+        height: 1500px;
+        width: 75%;
+    }
+
+    .ratcont, .maxcont, .backpackingSmallCont, .dndSmallCont,
+    .bostonscont, .backpackingLargeCont, .dndLargeCont {
+        width: 75%;
+        height: 100%;
+        margin: 25px auto;
+        max-width: 500px;
+        min-width: 500px;
+    }
+
+    .bostonscont, .backpackingLargeCont, .dndLargeCont {
+        padding: 50px 0px;
+        border-left: none;
+        border-right: none;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black; 
+    }
+
+    .rat, .bostons, .max, .backpackingSmall1, 
+    .backpackingSmall2, .backpackingLarge, 
+    .dndSmall1, .dndSmall2, .dndLarge {
+        width: 100%;
+        max-width: 500px;
+        min-width: 500px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .contentcont {
+        margin: 50px 0px;
+    }
+    
+    .generalcont {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .left {
+        width: 60%;
+        padding: 20px 0px;
+        margin: 50px 0px;
+    }
+    
+    .brdleft {
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-left: none;
+    }
+
+    .right {
+        width: 60%;
+        padding: 20px 0px;
+        margin: 50px 0px;
+    }
+    
+    .brdright {
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        border-right: none;
+    }
+    
+    .imgright {
+        order: -1;
+    }
+    
+    .animalcont, .backpackingCont, .dndCont {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        min-width: 600px;
+        height: 1500px;
+        width: 75%;
+    }
+
+    .ratcont, .maxcont, .backpackingSmallCont, .dndSmallCont,
+    .bostonscont, .backpackingLargeCont, .dndLargeCont {
+        width: 75%;
+        height: 100%;
+        margin: 25px auto;
+        max-width: 500px;
+        min-width: 500px;
+    }
+
+    .bostonscont, .backpackingLargeCont, .dndLargeCont {
+        padding: 50px 0px;
+        border-left: none;
+        border-right: none;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black; 
+    }
+
+    .rat, .bostons, .max, .backpackingSmall1, 
+    .backpackingSmall2, .backpackingLarge, 
+    .dndSmall1, .dndSmall2, .dndLarge {
+        width: 100%;
+        max-width: 500px;
+        min-width: 500px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px){ 
+    .generalcont {
+        width: 100%;
+    }
+    
+    .left {
+        width: 60%;
+        padding-left: 20px;
+        margin-right: 50px;
+    }
+    
+    .imgleft {
+        padding-right: 10px;
+    }
+
+    .right {
+        width: 60%;
+        padding-right: 20px;
+        margin-left: 50px;
+    }
+    
+    .imgright {
+        padding-left: 10px;
+    }
+
+    .animalcont, .backpackingCont, .dndCont {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        min-width: 600px;
+        height: 1500px;
+        width: 75%;
+    }
+
+    .ratcont, .maxcont, .backpackingSmallCont, .dndSmallCont,
+    .bostonscont, .backpackingLargeCont, .dndLargeCont {
+        width: 75%;
+        height: 100%;
+        margin: 25px auto;
+        max-width: 500px;
+        min-width: 500px;
+    }
+
+    .bostonscont, .backpackingLargeCont, .dndLargeCont {
+        padding: 50px 0px;
+        border-left: none;
+        border-right: none;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black; 
+    }
+
+    .rat, .bostons, .max, .backpackingSmall1, 
+    .backpackingSmall2, .backpackingLarge, 
+    .dndSmall1, .dndSmall2, .dndLarge {
+        width: 100%;
+        max-width: 500px;
+        min-width: 500px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    .generalcont {
+        width: 100%;
+    }
+    
+    .left {
+        width: 60%;
+        padding-left: 20px;
+        margin-right: 50px;
+    }
+
+    .right {
+        width: 60%;
+        padding-right: 20px;
+        margin-left: 50px;
+    }
+
+    .animalcont, .backpackingCont, .dndCont {
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        min-width: 600px;
+        height: 1500px;
+        width: 75%;
+    }
+
+    .ratcont, .maxcont, .backpackingSmallCont, .dndSmallCont,
+    .bostonscont, .backpackingLargeCont, .dndLargeCont {
+        width: 75%;
+        height: 100%;
+        margin: 25px auto;
+        max-width: 500px;
+        min-width: 500px;
+    }
+
+    .bostonscont, .backpackingLargeCont, .dndLargeCont {
+        padding: 50px 0px;
+        border-left: none;
+        border-right: none;
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        
+    }
+
+    .rat, .bostons, .max, .backpackingSmall1, 
+    .backpackingSmall2, .backpackingLarge, 
+    .dndSmall1, .dndSmall2, .dndLarge {
+        width: 100%;
+        max-width: 500px;
+        min-width: 500px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

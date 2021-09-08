@@ -1,0 +1,653 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+h1, h2, h3, a, th {
+    font-family: 'Quattrocento', serif;
+    font-weight: 800;
+}
+
+p, td {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    width: 100%;
+    height: 65px;
+    background-color: #262626;
+}
+
+.navcont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 1.65rem;
+    text-decoration: none;
+    color: #F2F2F2;
+    margin: 0px 10px;
+}
+
+.nav-socials {
+    overflow: hidden;
+}
+
+.nav-socials a {
+    font-size: 1.65rem;
+    text-decoration: none;
+    color: black;
+}
+
+.navother {
+    background-color: inherit;
+    padding: 18px 0px 17px 0px;
+}
+
+.navother, .projother, .projects {
+    transition: background-color 500ms ease;
+}
+
+.projdrop{
+    text-align: center;
+    width: 13%;
+    min-width: 132px;
+    display: inline-block;
+    padding: 19px 0px;
+}
+
+.projects {
+    padding: 19px 0px;
+}
+
+.projects img {
+    margin-left: 3px;
+}
+
+.projectlist{
+    display: none;
+    width: 12%;
+    min-width: 161px;
+    position: absolute;
+    top: 65px;
+    z-index: 2;
+    text-align: center;
+}
+
+.projectlist a {
+    display: inline-block;
+}
+
+.projother {
+    width: 100%;
+    padding: 15px 0px;
+}
+
+#dropimg {
+    width: 10%;
+}
+
+#dropimg2 {
+    margin: auto;
+    width: 50%;
+}
+
+.nav-socials {
+    width: 5%; 
+    min-width: 76px;
+}
+
+.socials {
+    display: flex;
+}
+
+.socialdrop {
+    padding: 14px 0px;
+    transition: all 500ms ease;
+}
+
+.social-list {
+    width: 5%;
+    min-width: 78px;
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 0px;
+    z-index: 2;
+}
+
+.social-list img{
+    position: relative;
+    width: 100%;
+    max-width: 65px;
+    min-width: 65px;
+    padding: 2px 0px;
+    z-index: 2;
+}
+
+.social-group {
+    min-height: 50px;
+    max-height: 100px;
+}
+
+.social-group a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#label-1, #label-2, #label-3, #label-4 {
+    visibility: hidden;
+    position: absolute;
+    left: 80px;
+    margin: 12px 10px;
+    background-color: inherit;
+    color: #F2F2F2;
+}
+
+.projects:hover, .navother:hover, .projother:hover, .socialdrop:hover  {
+    background-color: #595959;
+}
+
+.projects:hover a, .navother:hover a, .projother:hover a{
+    border-bottom: 2px solid black;
+}
+
+.projdrop:hover .projectlist, .socialdrop:hover .social-list {
+    display: block;
+    background-color: #262626;
+}
+
+
+/* Main Section */
+/* Hero Section */
+/*
+.herocont {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 600px;
+    margin-top: 100px;
+    background-image: url(../images/tempbanner.JPG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+
+.titlecont {
+    width: 25%;
+    min-width: 225px;
+    margin: 0px auto;
+    padding: 25px;
+    text-align: center;
+    background-color: white;
+}
+
+.titlecont h1 {
+    font-size: 3rem;
+}
+*/
+
+/* Buttons Section */
+.buttonscont {
+    width: 30%;
+    min-width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px auto;
+}
+
+.navbut {
+    margin: 0px auto
+}
+
+.navbut a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #F2F2F2;
+    background-color: #262626;
+    border: 1px solid #262626;
+    transition: all 400ms ease;
+}
+
+#currentbut {
+    padding: 25px 52px;
+}
+
+#completedbut {
+    padding: 25px 35px;
+}
+
+.navbut a:hover {
+    background-color: #F2F2F2;
+    color: #262626;
+}
+
+.navbut a:active {
+    background-color: #262626;
+    color: #F2F2F2;
+    border: none;
+}
+
+/* Index Section */
+.indexcont {
+    width: 100%;
+    margin: 100px auto;    
+}
+
+.indexcont h2 {
+    font-size: 2.25rem;
+    margin: 0px auto;
+    width: 25%;
+    min-width: 225px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1rem;
+}
+
+.indexcont span {
+    background: #F2F2F2;
+    padding: 0px 10px;
+}
+
+.tablecont {
+    margin: 50px auto 100px auto;
+    width: 100%;
+}
+
+.tablecont table {
+    font-size: 1.25rem;
+    margin: 50px auto;
+    padding: 25px;
+}
+
+.tablecont table th{
+    padding: 0px 25px 5px 25px;
+    border-bottom: 1px solid black;
+}
+
+.tablecont table td {
+    padding: 15px 25px;
+    text-align: center;
+}
+
+/* .tablecont table td a {} */
+
+.stylesdata {
+    display: flex;
+    justify-content: center;
+}
+
+.stylescont{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.style {
+    max-width: 50px;
+    min-width: 35px;
+    padding: 0px 5px;
+}
+
+.style img {
+    width: 100%;
+    height: auto;
+}
+
+/* Current Section */
+/* .overallcont {} */
+
+.overallcont h2 {
+    font-size: 2.25rem;
+    margin: 0px auto;
+    width: 25%;
+    min-width: 225px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1rem;
+}
+
+.overallcont span {
+    background: #F2F2F2;
+    padding: 0px 10px;
+}
+
+/* Project Section */
+.projectcont {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 150px 0px;
+}
+
+.infocont {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.imgcont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.imgcont img {
+    width: 100%;
+    height: auto;
+}
+
+.skillscont {
+    display:flex;
+    width: 15%;
+    min-width: 100px;
+    height: 50px;
+    margin: 25px 0px;
+}
+
+.iconcont {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.iconcont img{
+    min-width: 50px;
+    max-width: 50px;
+    height: auto;
+    margin: 0px 5px;
+}
+
+.descriptioncont {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 75%;
+    padding-left: 25px;
+}
+
+.descriptioncont h3 {
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 35px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+
+.descriptioncont p {
+    font-size: 1.15rem;
+    padding-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.left {
+    justify-self: flex-start;
+}
+
+.right {
+    justify-self: flex-end;
+}
+
+.brdleft {
+    border-left: 3px solid black;
+}
+
+.brdright {
+    padding-right: 20px;
+    border-right: 3px solid black;
+}
+
+.projectlink {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.projectlink a{
+    background-color: #262626;
+    border: 1px solid #262626;
+    text-decoration: none;
+    color: #F2F2F2;
+    font-size: 1.75rem;
+    transition: all 500ms ease;
+}
+
+.projectlink a img{
+    width: 3%;
+    margin: 0px 0px 3px 3px;
+}
+
+.projectlink a:hover {
+    background-color: #F2F2F2;
+    color: #262626;
+    border: 1px solid #262626;
+}
+
+/* Footer Section */
+footer {
+    width: 100%;
+    height: 45px;
+    margin-top: 100px;
+    background-color: #262626;
+}
+
+/* Media Query Section */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    table td, th{
+        font-size: 1rem;
+    }
+    
+    .tablecont table td {
+        padding: 15px 0px;
+        height: 85px;
+    }
+    
+    .tablecont table th{
+        width: 5%;
+        padding: 10px 0px;
+    }
+    
+    .tablecont table {
+        padding: 0px;
+    } 
+    
+    .style {
+        width: 35px;
+    }
+    
+    .projectcont {
+        flex-direction: column;
+        margin: 50px auto;
+    }
+    
+    .left {
+        width: 75%;
+        margin-bottom: 25px;
+        padding-top: 50px;
+        border-top: 3px solid black;
+    }
+    
+    .brdleft {
+        border-left: none;
+        padding: 0px;
+    }
+    
+    .right {
+        width: 75%;
+        margin-bottom: 25px;
+        padding-top: 50px;
+        border-top: 3px solid black;
+        order: -1;
+    }
+    
+    .brdright {
+        border-right: none;
+        padding: 0px;
+    }
+    
+    .infocont {
+        width: 65%;
+    }
+    
+    .descriptioncont{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    .tablecont table td {
+        padding: 15px 0px;
+        height: 85px;
+    }
+    
+    .tablecont table th{
+        width: 5%;
+        padding: 10px 0px;
+    }
+    
+    .tablecont table {
+        padding: 0px;
+    } 
+    
+    .style {
+        width: 40px;
+    }
+    
+    .projectcont {
+        flex-direction: column;
+        margin: 50px auto;
+    }
+    
+    .left {
+        width: 75%;
+        margin-bottom: 25px;
+        padding-top: 50px;
+        border-top: 3px solid black;
+    }
+    
+    .brdleft {
+        border-left: none;
+        padding: 0px;
+    }
+    
+    .right {
+        width: 75%;
+        margin-bottom: 25px;
+        padding-top: 50px;
+        border-top: 3px solid black;
+        order: -1;
+    }
+    
+    .brdright {
+        border-right: none;
+        padding: 0px;
+    }
+    
+    .infocont {
+        width: 65%;
+    }
+    
+    .descriptioncont{
+        width: 100%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .tablecont table td {
+        padding: 15px 0px;
+        height: 85px;
+    }
+    
+    .tablecont table th{
+        width: 5%;
+        padding: 10px 0px;
+    }
+    
+    .tablecont table {
+        padding: 0px;
+    } 
+    
+    .projectcont {
+        flex-direction: column;
+        margin: 50px auto;
+    }
+    
+    .left {
+        width: 75%;
+        margin-bottom: 25px;
+        padding-top: 50px;
+        border-top: 3px solid black;
+    }
+    
+    .brdleft {
+        width: 65%;
+        border-left: none;
+        padding: 0px;
+    }
+    
+    .right {
+        width: 75%;
+        margin-bottom: 25px;
+        padding-top: 50px;
+        border-top: 3px solid black;
+        order: -1;
+    }
+    
+    .brdright {
+        width: 65%;
+        border-right: none;
+        padding: 0px;
+    }
+    
+    .infocont {
+        width: 65%;
+    }
+    
+    .descriptioncont{
+        width: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .descriptioncont {
+        width: 85%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px){}
