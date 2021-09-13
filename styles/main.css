@@ -63,7 +63,7 @@ header {
 
 .navother {
     background-color: inherit;
-    padding: 18px 0px 17px 0px;
+    padding: 18px 43px 17px 43px;
 }
 
 .navother, .projother, .projects {
@@ -83,7 +83,7 @@ header {
 }
 
 .projects img {
-    margin-left: 3px;
+    margin-left: 10px;
 }
 
 .projectlist{
@@ -98,6 +98,7 @@ header {
 
 .projectlist a {
     display: inline-block;
+    border-bottom: 2px solid #262626; 
 }
 
 .projother {
@@ -295,6 +296,7 @@ header {
     width: 31%;
     min-width: 144px;
     margin-bottom: 25px;
+    padding: 0px 10px;
     border-bottom: 1px solid black;
 }
 
@@ -358,7 +360,7 @@ header {
 
 .overlay {
     background: rgba(0,0,0,0.5);
-    width: 75%;
+    width: 99%;
     transition: all 200ms ease;
     opacity: 0;
     font-size: 3.125rem;
@@ -368,6 +370,7 @@ header {
 }
 
 .imgcont a{
+    width: 100%;
     color: white;
     text-decoration: none;
 }
@@ -379,6 +382,11 @@ header {
 .imgcont:hover .overlay{
     transform: scale(1.01);
     opacity: 1;
+}
+
+.link {
+    color: white;
+    text-decoration-line: none;
 }
 
 /* Footer Section */

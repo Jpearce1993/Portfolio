@@ -22,7 +22,7 @@
                     </div>
                     <div class="projdrop">
                         <div class="projects">
-                            <a href="../pages/projects.html">Projects<img src="../images/arrow.png" id="dropimg" alt=""></a>
+                            <a href="../pages/projects.html">Projects<img src="../images/arrowwhite.png" id="dropimg" alt=""></a>
                         </div>
                         <div class="projectlist">
                             <div class="projother">
@@ -90,12 +90,25 @@
                                 <th>Project</th>
                                 <th>Status</th>
                                 <th>Styles</th>
-                                <th>Jump To</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Rolling</td>
+                                <td><a href="#sacredheart">Sacred Heart Adoption</a></td>
+                                <td>Current</td>
+                                <td class="stylesdata">                 
+                                    <div class="stylescont">
+                                        <div class="style">
+                                            <img src="../images/html5icon.png" alt="HTML5 Icon">
+                                        </div>
+                                        <div class="style">
+                                            <img src="../images/CSSicon.png" alt="CSS Icon">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#rolling">Rolling</a></td>
                                 <td>Current</td>
                                 <td class="stylesdata">                 
                                     <div class="stylescont">
@@ -110,11 +123,10 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td><a href="#rolling">View</a></td>
                             </tr>
                             <tr>
-                                <td>Sacred Heart Adoption</td>
-                                <td>Current</td>
+                                <td><a href="#jammming">Jammming</a></td>
+                                <td>Completed</td>
                                 <td class="stylesdata">                 
                                     <div class="stylescont">
                                         <div class="style">
@@ -123,12 +135,14 @@
                                         <div class="style">
                                             <img src="../images/CSSicon.png" alt="CSS Icon">
                                         </div>
+                                        <div class="style">
+                                            <img src="../images/JSicon.png" alt="CSS Icon">
+                                        </div>
                                     </div>
                                 </td>
-                                <td><a href="#sacredheart">View</a></td>
                             </tr>
                             <tr>
-                                <td>Hanes &amp Sanchez Law Firm</td>
+                                <td><a href="#hslawfirm">Hanes &amp Sanchez Law Firm</a></td>
                                 <td>Completed</td>
                                 <td class="stylesdata">                 
                                     <div class="stylescont">
@@ -140,10 +154,9 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td><a href="#hslawfirm">View</a></td>
                             </tr>
                             <tr>
-                                <td>Fotomatic</td>
+                                <td><a href="#fotomatic">Fotomatic</a></td>
                                 <td>Completed</td>
                                 <td class="stylesdata">                 
                                     <div class="stylescont">
@@ -155,10 +168,9 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td><a href="#fotomatic">View</a></td>
                             </tr>
                             <tr>
-                                <td>Knitters Anonymous</td>
+                                <td><a href="#knittersanon">Knitters Anonymous</a></td>
                                 <td>Completed</td>                       
                                 <td class="stylesdata">                 
                                     <div class="stylescont">
@@ -170,10 +182,9 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td><a href="#knittersanon">View</a></td>
                             </tr>
                             <tr>
-                                <td>Mysterious Organism</td>
+                                <td><a href="#mysteryorg">Mysterious Organism</a></td>
                                 <td>Completed</td>
                                 <td class="stylesdata">                 
                                     <div class="stylescont">
@@ -182,10 +193,9 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td><a href="#mysteryorg">View</a></td>
                             </tr>
                             <tr>
-                                <td>Tea Cozy</td>
+                                <td><a href="#teacozy">Tea Cozy</a></td>
                                 <td>Completed</td>
                                 <td class="stylesdata">                 
                                     <div class="stylescont">
@@ -197,10 +207,9 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td><a href="#teacozy">View</a></td>
                             </tr>
                             <tr>
-                                <td>Credit Card Checker</td>
+                                <td><a href="#creditcard">Credit Card Checker</a></td>
                                 <td>Completed</td>
                                 <td class="stylesdata">                 
                                     <div class="stylescont">
@@ -209,10 +218,9 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td><a href="#creditcard">View</a></td>
                             </tr>
                             <tr>
-                                <td>Find Your Hat</td>
+                                <td><a href="#findyourhat">Find Your Hat</a></td>
                                 <td>Completed</td>
                                 <td class="stylesdata">                 
                                     <div class="stylescont">
@@ -221,7 +229,6 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td><a href="#findyourhat">View</a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -229,36 +236,6 @@
             </section>
             <section class="overallcont">
                 <h2><span id="current">Current</span></h2>
-                <div class="projectcont">
-                    <div class="imgcont left">
-                        <img src="../images/rolling.JPG" alt="">
-                    </div>
-                    <div class="infocont" id="rolling">
-                        <div class="descriptioncont brdleft">
-                            <h3>Rolling</h3>
-                            <p>
-                                Personal project created focusing on building components and instances with React.
-                                <br><br>I tasked myself with creating a React application that would implement the 
-                                use of save states and the passing of props in between different components to represent the use of multiple
-                                types of dice used in Dungeons and Dragons being rolled either independently or in a group.
-                                <br><br>This project implements the use of HTML, CSS, JS and React components.
-                            </p>
-                            <div class="skillscont">
-                                <div class="iconcont">
-                                    <img src="../images/html5icon.png" alt="HTML5 Icon">
-                                    <img src="../images/CSSicon.png" alt="CSS Icon">
-                                    <img src="../images/JSicon.png" alt="JS Icon">
-                                </div>
-                            </div>
-                            <div class="projectlink">
-                                <!-- <a href="" target="_blank" rel="noopener noreferrer">
-                                    Visit
-                                    <img src="../images/arrowright.png">
-                                </a> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="projectcont">
                     <div class="infocont" id="sacredheart">
                         <div class="descriptioncont brdright">
@@ -272,7 +249,7 @@
                         </div>
                     </div>
                     <div class="imgcont right">
-                        <img src="../images/sacredheart.JPG" alt="">
+                        <img src="../images/sacredheart.JPG" alt="" class="projectpreview">
                         <div class="skillscont">
                             <div class="iconcont">
                                 <img src="../images/html5icon.png" alt="HTML5 Icon">
@@ -287,12 +264,80 @@
                         </div>
                     </div>
                 </div>
+                <div class="projectcont">
+                    <div class="imgcont left">
+                        <img src="../images/rolling.JPG" alt="" class="projectpreview">
+                        <div class="skillscont">
+                            <div class="iconcont">
+                                <img src="../images/html5icon.png" alt="HTML5 Icon">
+                                <img src="../images/CSSicon.png" alt="CSS Icon">
+                                <img src="../images/JSicon.png" alt="JS Icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="infocont" id="rolling">
+                        <div class="descriptioncont brdleft">
+                            <h3>Rolling</h3>
+                            <p>
+                                Personal project created focusing on building components and instances with React.
+                                <br><br>I tasked myself with creating a React application that would implement the 
+                                use of save states and the passing of props in between different components to represent the use of multiple
+                                types of dice used in Dungeons and Dragons being rolled either independently or in a group.
+                                <br><br>This project implements the use of HTML, CSS, JS and React components.
+                            </p>
+                            <div class="projectlink">
+                                <!-- <a href="" target="_blank" rel="noopener noreferrer">
+                                    Visit
+                                    <img src="../images/arrowright.png">
+                                </a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="overallcont">
                 <h2><span id="completed">Completed</span></h2>
                 <div class="projectcont">
+                    <div class="infocont" id="jammming">
+                        <div class="descriptioncont brdright">
+                            <h3>Jammming</h3>
+                            <p>
+                                This project was created for a Codecademy assignment focusing on working with React instances and components.
+                                <br><br>I was tasked with creating an application that would manipulate JSON packets containing data from
+                                the Spotify API and fulfill a search based on certain parameters. The search results could be used to create a
+                                playlist that could be saved to the user's Spotify account.
+                                <br><br> This project implements JS, HTML, and CSS code.
+                            </p>
+                            <div class="projectlink">
+                                <a href="https://domineering-ear.surge.sh/"  target="_blank" rel="noopener noreferrer">
+                                    Visit
+                                    <div class="linkimgcont">
+                                        <div class="linkarrow"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imgcont right">
+                        <img src="../images/jammming.JPG" alt="" class="projectpreview">
+                        <div class="skillscont">
+                            <div class="iconcont">
+                                <img src="../images/html5icon.png" alt="HTML5 Icon">
+                                <img src="../images/CSSicon.png" alt="CSS Icon">
+                                <img src="../images/JSicon.png" alt="JS Icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                <div class="projectcont">
                     <div class="imgcont left">
-                        <img src="../images/tempbanner.JPG" alt="">
+                        <img src="../images/tempbanner.JPG" alt="" class="projectpreview">
+                        <div class="skillscont">
+                            <div class="iconcont">
+                                <img src="../images/html5icon.png" alt="HTML5 Icon">
+                                <img src="../images/CSSicon.png" alt="CSS Icon">
+                            </div>
+                        </div>
                     </div>
                     <div class="infocont" id="hslawfirm">
                         <div class="descriptioncont brdleft">
@@ -302,16 +347,12 @@
                                 <br><br>I was tasked with creating a website main page for a fictional company that would be responsive on multiple media platforms.
                                 <br><br>This project only implements HTML and CSS code, but has potential to be modified with JS. 
                             </p>
-                            <div class="skillscont">
-                                <div class="iconcont">
-                                    <img src="../images/html5icon.png" alt="HTML5 Icon">
-                                    <img src="../images/CSSicon.png" alt="CSS Icon">
-                                </div>
-                            </div>
                             <div class="projectlink">
                                 <a href="https://jpearce1993.github.io/Hanes-Sanchez-Law-Firm/" target="_blank" rel="noopener noreferrer">
                                     Visit
-                                    <img src="../images/arrowright.png">
+                                    <div class="linkimgcont">
+                                        <div class="linkarrow"></div>
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -328,27 +369,35 @@
                                 Github page <a href="https://github.com/Jpearce1993/Fotomatic"  target="_blank" rel="noopener noreferrer">here</a>.
                                 <br><br> This project only implements HTML and CSS code.
                             </p>
-                            <div class="skillscont">
-                                <div class="iconcont">
-                                    <img src="../images/html5icon.png" alt="HTML5 Icon">
-                                    <img src="../images/CSSicon.png" alt="CSS Icon">
-                                </div>
-                            </div>
                             <div class="projectlink">
                                 <a href="https://jpearce1993.github.io/Fotomatic/"  target="_blank" rel="noopener noreferrer">
                                     Visit
-                                    <img src="../images/arrowright.png">
+                                    <div class="linkimgcont">
+                                        <div class="linkarrow"></div>
+                                    </div>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="imgcont right">
-                        <img src="../images/fotomatic.jpg" alt="">
+                        <img src="../images/fotomatic.jpg" alt="" class="projectpreview">
+                        <div class="skillscont">
+                            <div class="iconcont">
+                                <img src="../images/html5icon.png" alt="HTML5 Icon">
+                                <img src="../images/CSSicon.png" alt="CSS Icon">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="projectcont">
                     <div class="imgcont left">
-                        <img src="../images/knittersanon.jpg" alt="">
+                        <img src="../images/knittersanon.jpg" alt="" class="projectpreview">
+                        <div class="skillscont">
+                            <div class="iconcont">
+                                <img src="../images/html5icon.png" alt="HTML5 Icon">
+                                <img src="../images/CSSicon.png" alt="CSS Icon">
+                            </div>
+                        </div>
                     </div>
                     <div class="infocont" id="knittersanon">
                         <div class="descriptioncont brdleft">
@@ -359,16 +408,12 @@
                                 This site provided information for meetings and council members, as well as a form for new members to sign-up with.
                                 <br><br> This project only implements HTML and Css code, but has potential to be modified with JS.
                             </p>
-                            <div class="skillscont">
-                                <div class="iconcont">
-                                    <img src="../images/html5icon.png" alt="HTML5 Icon">
-                                    <img src="../images/CSSicon.png" alt="CSS Icon">
-                                </div>
-                            </div>
                             <div class="projectlink">
                                 <a href=https://jpearce1993.github.io/Knitters-Anon/ target="_blank" rel="noopener noreferrer">
                                     Visit
-                                    <img src="../images/arrowright.png">
+                                    <div class="linkimgcont">
+                                        <div class="linkarrow"></div>
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -384,26 +429,34 @@
                                 randomized DNA strand. These organisms could interact or be modified with different implemented methods.
                                 <br><br>This project is solely Javascript code but could be modified into a HTML project.
                             </p>
-                            <div class="skillscont">
-                                <div class="iconcont">
-                                    <img src="../images/JSicon.png" alt="JS Icon">
-                                </div>
-                            </div>
                             <div class="projectlink">
                                 <a href= "https://github.com/Jpearce1993/Mysterious-Organism"  target="_blank" rel="noopener noreferrer">
                                     Visit
-                                    <img src="../images/arrowright.png">
+                                    <div class="linkimgcont">
+                                        <div class="linkarrow"></div>
+                                    </div>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="imgcont right">
-                        <img src="../images/mysteryorg.jpg" alt="">
+                        <img src="../images/mysteryorg.jpg" alt="" class="projectpreview">
+                        <div class="skillscont">
+                            <div class="iconcont">
+                                <img src="../images/JSicon.png" alt="JS Icon">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="projectcont">
                     <div class="imgcont left">
-                        <img src="../images/teacozy.JPG" alt="">
+                        <img src="../images/teacozy.JPG" alt="" class="projectpreview">
+                        <div class="skillscont">
+                            <div class="iconcont">
+                                <img src="../images/html5icon.png" alt="HTML5 Icon">
+                                <img src="../images/CSSicon.png" alt="CSS Icon">
+                            </div>
+                        </div>
                     </div>
                     <div class="infocont" id="teacozy">
                         <div class="descriptioncont brdleft">
@@ -415,16 +468,12 @@
                                 <a href="https://github.com/Jpearce1993/Tea-Cozy"  target="_blank" rel="noopener noreferrer">here</a>.
                                 <br><br> This project only implements HTML and CSS code.
                             </p>
-                            <div class="skillscont">
-                                <div class="iconcont">
-                                    <img src="../images/html5icon.png" alt="HTML5 Icon">
-                                    <img src="../images/CSSicon.png" alt="CSS Icon">
-                                </div>
-                            </div>
                             <div class="projectlink">
                                 <a href="https://jpearce1993.github.io/Tea-Cozy/" target="_blank" rel="noopener noreferrer">
                                     Visit
-                                    <img src="../images/arrowright.png">
+                                    <div class="linkimgcont">
+                                        <div class="linkarrow"></div>
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -441,26 +490,33 @@
                                  The script could also change an invalid number to a valid one and check which credit card company distributed the card.
                                  <br><br>This project is solely Javascript code but could be modified into a HTML project.
                             </p>
-                            <div class="skillscont">
-                                <div class="iconcont">
-                                    <img src="../images/JSicon.png" alt="JS Icon">
-                                </div>
-                            </div>
                             <div class="projectlink">
                                 <a href="https://github.com/Jpearce1993/Credit-Card-Checker"  target="_blank" rel="noopener noreferrer">
                                     Visit
-                                    <img src="../images/arrowright.png">
+                                    <div class="linkimgcont">
+                                        <div class="linkarrow"></div>
+                                    </div>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="imgcont right">
-                        <img src="../images/creditcard.JPG" alt="">
+                        <img src="../images/creditcard.JPG" alt="" class="projectpreview">
+                        <div class="skillscont">
+                            <div class="iconcont">
+                                <img src="../images/JSicon.png" alt="JS Icon">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="projectcont">
                     <div class="imgcont left">
-                        <img src="../images/findyourhat.JPG" alt="">
+                        <img src="../images/findyourhat.JPG" alt="" class="projectpreview">
+                        <div class="skillscont">
+                            <div class="iconcont">
+                                <img src="../images/JSicon.png" alt="HTML5 Icon">
+                            </div>
+                        </div>
                     </div>
                     <div class="infocont" id="findyourhat">
                         <div class="descriptioncont brdleft">
@@ -471,15 +527,12 @@
                                  The player would move their sprite with user input to a randomized end location avoiding certain obstacles.
                                  <br><br> This project only implements JS code.
                             </p>
-                            <div class="skillscont">
-                                <div class="iconcont">
-                                    <img src="../images/JSicon.png" alt="HTML5 Icon">
-                                </div>
-                            </div>
                             <div class="projectlink">
                                 <a href="https://github.com/Jpearce1993/Find-Your-Hat" target="_blank" rel="noopener noreferrer">
                                     Visit
-                                    <img src="../images/arrowright.png">
+                                    <div class="linkimgcont">
+                                        <div class="linkarrow"></div>
+                                    </div>
                                 </a>
                             </div>
                         </div>

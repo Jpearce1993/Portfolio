@@ -62,7 +62,7 @@ header {
 
 .navother {
     background-color: inherit;
-    padding: 18px 0px 17px 0px;
+    padding: 18px 43px 17px 43px;
 }
 
 .navother, .projother, .projects {
@@ -82,7 +82,7 @@ header {
 }
 
 .projects img {
-    margin-left: 3px;
+    margin-left: 10px;
 }
 
 .projectlist{
@@ -97,6 +97,7 @@ header {
 
 .projectlist a {
     display: inline-block;
+    border-bottom: 2px solid #262626; 
 }
 
 .projother {
