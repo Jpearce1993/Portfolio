@@ -562,6 +562,10 @@ footer {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 768px) {
+    .projects img {
+        margin-left: 0px;
+    }
+
     .tablecont table td {
         padding: 15px 0px;
         height: 85px;
@@ -621,6 +625,10 @@ footer {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .projects img {
+        margin-left: 0px;
+    }
+
     .tablecont table td {
         padding: 15px 0px;
         height: 85px;
@@ -678,6 +686,10 @@ footer {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .projects img {
+        margin-left: 0px;
+    }
+    
     .descriptioncont {
         width: 85%;
     }

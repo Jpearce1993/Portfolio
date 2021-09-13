@@ -475,11 +475,9 @@ footer {
 /* Media Query Section */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-/*
-    body{
-        background-color: red;
+    .projects img {
+        margin-left: 0px;
     }
-*/
     
     /* Form Section */
     .formcont {
@@ -500,12 +498,10 @@ footer {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 768px) {
-/*
-    body{
-        background-color: blue;
+    .projects img {
+        margin-left: 0px;
     }
-    
-*/
+
     /* Form Section */
     .formcont {
         flex-direction: column;
@@ -528,15 +524,9 @@ footer {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px ) {
-/*
-    body{
-        background-color: green;
+    .projects img {
+        margin-left: 0px;
     }
-*/
-    
-    /* Header Section */
-    /* .projdrop {
-    } */
     
     /* Form Section */
     .formcont {
@@ -559,4 +549,7 @@ footer {
 
  /* Large devices (laptops/desktops, 992px and up)  */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .projects img {
+        margin-left: 0px;
+    }
 }
